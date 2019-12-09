@@ -1,0 +1,28 @@
+<p>
+  newone works!
+  <br>
+  Hello {{ message}}
+  <br>
+  {{beatles}}
+  <br>
+
+</p>
+<h1 *ngFor = "let item of items; let i=index " >{{i}} {{item}}</h1>
+<h1 *ngFor = "let item of items" > {{item}}</h1>
+
+<ul>
+  <li
+    *ngFor = "let item of items" > {{item}}>
+  </li>
+
+</ul>
+<h2>-------------------------------</h2>
+<h3 *ngFor = "let item of items; let first = first; let last = last; let odd = odd"[ngClass]="{first:first, last:last, odd:odd}"   > {{item}} </h3>
+<h2>-------------------------------</h2>
+<div *ngIf="isok; else bad">
+   Hello world
+</div>
+<div #bad>
+  Goodbye World!
+</div>
+<h2>-------------------------------</h2>
