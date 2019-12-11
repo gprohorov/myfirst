@@ -22,8 +22,20 @@
 <div *ngIf="isok; else bad">
    Hello world
 </div>
-<ng-template #bad>
+<ng-template  #bad>
   Goodbye World!
 </ng-template>
 <h2>-------------------------------</h2>
 <h2>-------------------------------</h2>
+
+<button (click)="onClick($event)">Click me!</button>
+<br>
+<button *ngIf="seen" (click)="reverse()">Seen</button>
+<button *ngIf="!seen" (click)="reverse()">Hidden</button>
+
+<p *ngIf="seen">
+
+iuhhtewssfhjkllu5555555555555555
+
+</p>
+
